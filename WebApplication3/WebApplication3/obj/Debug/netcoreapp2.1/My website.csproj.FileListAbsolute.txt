@@ -1,0 +1,28 @@
+E:\School\WebApplication3\WebApplication3\bin\Debug\netcoreapp2.1\My website.deps.json
+E:\School\WebApplication3\WebApplication3\bin\Debug\netcoreapp2.1\My website.runtimeconfig.json
+E:\School\WebApplication3\WebApplication3\bin\Debug\netcoreapp2.1\My website.runtimeconfig.dev.json
+E:\School\WebApplication3\WebApplication3\bin\Debug\netcoreapp2.1\My website.dll
+E:\School\WebApplication3\WebApplication3\bin\Debug\netcoreapp2.1\My website.pdb
+E:\School\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.csprojAssemblyReference.cache
+E:\School\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.csproj.CoreCompileInputs.cache
+E:\School\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.RazorAssemblyInfo.cache
+E:\School\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.RazorAssemblyInfo.cs
+E:\School\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.AssemblyInfoInputs.cache
+E:\School\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.AssemblyInfo.cs
+E:\School\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.RazorTargetAssemblyInfo.cache
+E:\School\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.dll
+E:\School\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.pdb
+E:\School\תכנות\דברים של HTML\WebApplication3\WebApplication3\bin\Debug\netcoreapp2.1\My website.deps.json
+E:\School\תכנות\דברים של HTML\WebApplication3\WebApplication3\bin\Debug\netcoreapp2.1\My website.runtimeconfig.json
+E:\School\תכנות\דברים של HTML\WebApplication3\WebApplication3\bin\Debug\netcoreapp2.1\My website.runtimeconfig.dev.json
+E:\School\תכנות\דברים של HTML\WebApplication3\WebApplication3\bin\Debug\netcoreapp2.1\My website.dll
+E:\School\תכנות\דברים של HTML\WebApplication3\WebApplication3\bin\Debug\netcoreapp2.1\My website.pdb
+E:\School\תכנות\דברים של HTML\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.csprojAssemblyReference.cache
+E:\School\תכנות\דברים של HTML\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.csproj.CoreCompileInputs.cache
+E:\School\תכנות\דברים של HTML\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.RazorAssemblyInfo.cache
+E:\School\תכנות\דברים של HTML\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.RazorAssemblyInfo.cs
+E:\School\תכנות\דברים של HTML\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.AssemblyInfoInputs.cache
+E:\School\תכנות\דברים של HTML\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.AssemblyInfo.cs
+E:\School\תכנות\דברים של HTML\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.RazorTargetAssemblyInfo.cache
+E:\School\תכנות\דברים של HTML\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.dll
+E:\School\תכנות\דברים של HTML\WebApplication3\WebApplication3\obj\Debug\netcoreapp2.1\My website.pdb

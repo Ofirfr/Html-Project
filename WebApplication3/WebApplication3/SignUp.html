@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link type="text/css" href="StyleSheet1.css" rel="stylesheet">
+    <script type="text/javascript">
+        function isVaild() {
+            var b = true;
+            var Msg = document.getElementById('error');
+            Msg.innerHTML = "";
+            var firstName = document.getElementById('firstName');
+            firstName.style.backgroundColor = "white";
+            var lastName = document.getElementById('lastName');
+            lastName.style.backgroundColor = "white";
+            var userName = document.getElementById('userName');
+            userName.style.backgroundColor = "white";
+            var email = document.getElementById('email');
+            email.style.backgroundColor = "white";
+            var Male = document.getElementById('male');
+            var Female = document.getElementById('female');
+            var password = document.getElementById('password');
+            password.style.backgroundColor = "white";
+            var confirmPassword = document.getElementById('confirmPassword');
+            confirmPassword.style.backgroundColor = "white";
+            var birthday = document.getElementById('birthday');
+            birthday.style.backgroundColor = "white";
+            var phone = document.getElementById('phone');
+            phone.style.backgroundColor = "white";
+            var agree = document.getElementById('agree');
+            agree.style.backgroundColor = "white";
+
+            if (firstName.value == '') {
+                Msg.innerHTML += "You must enter your first name<br/>";
+                firstName.focus();
+                firstName.style.backgroundColor = "red";
+                b = false;
+            }
+            if (firstName.value.length < 2 || firstName.value.length > 8) {
+                Msg.innerHTML += "The first name must be atleast 2 chars and less then 8 chars<br/>";
+                firstName.focus();
+                firstName.style.backgroundColor = "red";
+                b = false;
+            }
+
+            if (lastName.value == '') {
+                Msg.innerHTML += "You must enter your last name<br/>";
+                lastName.focus();
+                lastName.style.backgroundColor = "red";
+                b = false;
+            }
+            
+
+            if (userName.value == '') {
+                Msg.innerHTML += "You must enter your user name<br/>";
+                userName.focus();
+                userName.style.backgroundColor = "red";
+                b = false;
+            }
+            if (userName.value.length < 2 || userName.value.length>8) {
+                Msg.innerHTML += "The user name must be atleast 2 chars and less then 8 chars<br/>";
+                userName.focus();
+                userName.style.backgroundColor = "red";
+                b = false;
+            }
+            if ((Female.checked == false) && (Male.checked == false)) {
+                Msg.innerHTML += "You must choose a gender: Male or Female<br/>";
+                b = false;
+            }
+            if (email.value == '') {
+                Msg.innerHTML += "You must enter your email<br/>";
+                email.focus();
+                email.style.backgroundColor = "red";
+                b = false;
+            }
+
+            if (email.value.indexOf('@') < 1) {
+                Msg.innerHTML += "The email must include a @ from the second char and further<br/>";
+                email.style.backgroundColor = "red";
+                b = false;
+            }
+            if (email.value.lastIndexOf('@') != email.value.indexOf('@')) {
+                Msg.innerHTML += "The email msut contain only one @<br/>";
+                email.style.backgroundColor = "red";
+                b = false;
+            }
+
+
+            var charCounter = 0;
+            var numCounter = 0;
+            for (i = 0; i < password.value.length; i++) {
+                if (isNaN(password.value.charAt(i)) == true) {
+                    charCounter++;
+                }
+                else {
+                    numCounter++;
+                }
+
+            }
+            if (charCounter == 0 || numCounter == 0) {
+                Msg.innerHTML += "Your password must include atleast 1 char and 1 number</br>";
+                password.style.backgroundColor = "red";
+                password.focus();
+                b = false;
+            }
+            if (password.style.backgroundColor == "white" && password.value != confirmPassword.value) {
+                Msg.innerHTML += "Password confirmation failed</br>";
+                confirmPassword.style.backgroundColor = "red";
+                confirmPassword.focus();
+                b = false;
+            }
+
+            if (birthday.value == '') {
+                Msg.innerHTML += "Please fill up your birthday date</br>";
+                birthday.focus();
+                birthday.style.backgroundColor = "red";
+                b = false;
+            }
+
+
+
+            if (phone.value.length != 7) {
+                Msg.innerHTML += "Please enter your 7 digit phone number</br>";
+                phone.focus();
+                phone.style.backgroundColor = "red";
+                b = false;
+            }
+            if (isNaN(phone.value) == true) {
+                Msg.innerHTML += "Your phone number must only include numbers</br>";
+                phone.focus();
+                phone.style.backgroundColor = "red";
+
+                b = false;
+            }
+
+            if (agree.checked == false) {
+                Msg.innerHTML += "You must agree to the terms and service</br>";
+                agree.focus();
+                agree.style.backgroundColor = "red";
+                b = false;
+            }
+
+
+            return b;
+        }
+        function Reset() {
+            var Msg = document.getElementById('error');
+            Msg.innerHTML = "";
+            var firstName = document.getElementById('firstName');
+            firstName.style.backgroundColor = "white";
+            var lastName = document.getElementById('lastName');
+            lastName.style.backgroundColor = "white";
+            var userName = document.getElementById('userName');
+            userName.style.backgroundColor = "white";
+            var email = document.getElementById('email');
+            email.style.backgroundColor = "white";
+            var Male = document.getElementById('male');
+            var Female = document.getElementById('female');
+            var password = document.getElementById('password');
+            password.style.backgroundColor = "white";
+            var confirmPassword = document.getElementById('confirmPassword');
+            confirmPassword.style.backgroundColor = "white";
+            var birthday = document.getElementById('birthday');
+            birthday.style.backgroundColor = "white";
+            var phone = document.getElementById('phone');
+            phone.style.backgroundColor = "white";
+            var agree = document.getElementById('agree');
+            agree.style.backgroundColor = "white";
+
+        }
+    </script>
+</head>
+<body>
+
+    <ul id="navul">
+        <li class="navli"><a class="active" href="About.html">About</a></li>
+        <li class="navli"><a href="Subject.html">Subject</a></li>
+        <li class="navli"><a href="Table.html">Table</a></li>
+        <li class="navli"style="margin-left:5px"><a href="Login.html">Login       </a></li>
+        <li class="navli"><a href="SlideShow.html">Slides</a></li>
+    </ul>
+
+    <h1>Sign Up</h1>
+    <form onsubmit="return isVaild()" action="Login.html">
+        <table align="center">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" id="firstName"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" id="lastName"></td>
+            </tr>
+            <tr>
+                <td>User Name</td>
+                <td><input type="text" id="userName"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td>Confirm password</td>
+                <td><input type="password" id="confirmPassword"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+
+                <td><input type="radio" value="Female" id="female" name="gender">Female</td>
+                <td><input type="radio" value="Male" id="male" name="gender">Male</td>
+            </tr>
+            <tr>
+                <td>Birthday</td>
+                <td><input type="date" id="birthday"></td>
+            </tr>
+            <tr>
+                <td>Phone number</td>
+                <td>
+                    <select id="cell" name="cell">
+                        <option label="050" value="050"></option>
+                        <option label="052" value="052"></option>
+                        <option label="054" value="054"></option>
+                    </select>
+
+                    <input type="text" id="phone" style="width:50%">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" id="agree">I agree to the terms and service</td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+
+
+                <td><input type="reset" value="Reset" onclick="Reset()"></td>
+            </tr>
+        </table>
+        <div id="error" class="error"></div>
+    </form>
+
+</body>
+</html>
